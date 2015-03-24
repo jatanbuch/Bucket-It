@@ -1,0 +1,69 @@
+$(document).ready(function(){
+	$('button#startButton').click(function(){
+		if($('div#intro1').is(':hidden')){
+			$('div#intro1').fadeIn(3000);
+			$('#startButton').hide('slow');
+		}else{
+			$('div#intro1').hide('slow');
+		}
+	});
+	$('button#introButton1').click(function(){
+		if($('div#intro2').is(":hidden")){
+			$('div#intro2').fadeIn(3000);
+			$('button#introButton1').hide('slow');
+		}else{
+			$('div#intro2').hide('slow');
+		}
+	});
+	$('button#introButton2').click(function(){
+		if($('div#intro3').is(":hidden")){
+			$('div#intro3').fadeIn(3000);
+			$('button#introButton2').hide('slow');
+		}else{
+			$('div#intro3').hide('slow');
+		}
+	});
+	$('button#introButton3').click(function(){
+		if($('div#intro4').is(":hidden")){
+			$('div#intro4').fadeIn(3000);
+			$('button#introButton3').hide('slow');
+		}else{
+			$('div#intro4').hide('slow');
+		}
+	});
+	$('button#getStarted').click(function(){
+		if($('div.login').is(":hidden")){
+			$('div.login').fadeIn('slow');
+			$('div.block1').fadeOut('fast');
+		}else{
+			$('div.login').fadeOut('slow');
+		}
+	});
+	$('button#signup').click(function(){
+		if($('div.signup').is(":hidden")){
+			$('div.signup').fadeIn('slow');
+			$('div.login').hide();
+		}
+	});
+	$('a#login').click(function(){
+		if($('div.login').is(":hidden")){
+			$('div.login').fadeIn('slow');
+			$('div.block1').hide();
+			$('div.signup').hide();
+			$('div#discoverPage').hide();
+		}
+	});
+	$('a#discover').click(function(){
+		if($('div#discoverPage').is(":hidden")){
+			$('div.block1').hide();
+			$('div#discoverPage').fadeIn('slow');
+			$('div.login').hide();
+		}else{
+			$('div#discoverPage').hide();
+		}
+	});
+
+	
+
+
+});
